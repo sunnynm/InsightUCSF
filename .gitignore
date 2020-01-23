@@ -1,0 +1,5 @@
+
+*.txt
+Data/glove.6B.zip
+Data/GoogleNews-vectors-negative300.bin
+Data/GoogleNews-vectors-negative300.bin.gz
