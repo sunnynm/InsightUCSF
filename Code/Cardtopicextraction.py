@@ -10,7 +10,8 @@ keylist = list(keypd.values.flatten())
 keylist = [x.lower() for x in keylist]
 print(keylist)
 finalwordlist = []
-with open('../Data/2Cardiolgydistance.csv', mode='w', encoding='UTF-8', newline='') as file:
+import csv
+with open('./Refinedcardtopicdist.csv', mode='w', encoding='UTF-8', newline='') as file:
 	ewrite = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
 	ewrite.writerow(['Phrase', 'CardVal', 'HeartVal'])
 	for word in keylist:
@@ -34,7 +35,7 @@ print("--- %s seconds ---" % (time.time() - start_time))
 
 import pickle
 filesave = 'refinedcardtopiclist.pickle'
-with open(finalwordlist, 'wb') as fp:
-	pickle.dump(iddict , fp)
+with open(filesave, 'wb') as fp:
+	pickle.dump(list(set(finalwordlist)) , fp)
 print("--- %s seconds ---" % (time.time() - start_time))
 print("done")
