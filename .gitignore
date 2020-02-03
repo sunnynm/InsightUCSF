@@ -1,0 +1,15 @@
+
+*.txt
+Data/glove.6B.zip
+Data/GoogleNews-vectors-negative300.bin
+Data/GoogleNews-vectors-negative300.bin.gz
+Data/04.1.Pubmed_Abstracts_29K_011320.csv
+Data/04.2.Pubmed_Abstracts_57K_011320.csv
+Data/10.arxiv_bioarxiv_medarxiv_PDFs_011720.csv
+Data/cui2vec_pretrained.csv
+Data/cui2vec_pretrained.csv.zip
+Data/__MACOSX/._cui2vec_pretrained.csv
+Data/AllAbstracts.csv
+Data/TFIDF2gramkeywordsFULL.csv
+Data/TFIDF3gramkeywordsFULL.csv
+Data/TFIDF4gramkeywordsFULL.csv
