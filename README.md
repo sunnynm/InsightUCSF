@@ -7,5 +7,13 @@ Over the last couple of years, many papers have been published in the medical fi
 
 ### Data 
 
+As we are in the middle of trying to publish our results, we cannot post the abstracts we used for our data. We, however, used 50k abstracts from various online medical journals.
 
-### Methodly 
+### Methodology 
+
+### Requirements
+
+All packages used can be installed using conda or pip for Python 3.7:
+
+*csv*
+
