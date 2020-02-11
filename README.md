@@ -16,14 +16,24 @@ As we are in the middle of trying to publish our results, we cannot post the abs
 All packages used can be installed using conda or pip for Python 3.7:
 
 *csv*
+
 *gensim*
+
 *numpy*
+
 *matplotlib*
+
 *sklearn*
+
 *pandas*
+
 *wordcloud*
+
 *re*
+
 *rake_nltk*
+
 *nltk*
+
 *nltk stopwords* this can installed after installing nltk by running "python -m nltk.downloader stopwords"
 
