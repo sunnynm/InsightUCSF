@@ -13,6 +13,8 @@ As we are in the middle of trying to publish our results, we cannot post the abs
 
 ### Requirements
 
+#### Packages
+
 All packages used can be installed using conda or pip for Python 3.7:
 
 *csv*
@@ -37,3 +39,6 @@ All packages used can be installed using conda or pip for Python 3.7:
 
 *nltk stopwords* this can installed after installing nltk by running "python -m nltk.downloader stopwords"
 
+#### Word2vec Embeddings
+
+After testing various embeddings, we decided to use BioWordVec as their embeddings seem to be most approiate for our model. Further details about how they trained the model and the actual models can be found in the following link: https://github.com/ncbi-nlp/BioSentVec
