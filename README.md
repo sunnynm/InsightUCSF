@@ -7,7 +7,7 @@ Over the last couple of years, many papers have been published in the medical fi
 
 ### Data 
 
-As we are in the middle of trying to publish our results, we cannot post the abstracts we used for our data. We, however, used 50k abstracts from various online medical journals.
+As we are in the middle of trying to publish our results, we cannot post the abstracts we used for our data. We, however, used 50k abstracts from various medical journals.
 
 ### Methodology 
 
