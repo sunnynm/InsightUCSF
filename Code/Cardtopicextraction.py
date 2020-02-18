@@ -13,7 +13,7 @@ finalwordlist = []
 import csv
 with open('./Refinedcardtopicdist.csv', mode='w', encoding='UTF-8', newline='') as file:
 	ewrite = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-	ewrite.writerow(['Phrase', 'CardVal', 'HeartVal'])
+	ewrite.writerow(['Phrase', 'Base1Val', 'Base2Val'])
 	for word in keylist:
 		#http://www.albertauyeung.com/post/generating-ngrams-python/
 		tokens = [token for token in word.split(" ") if token != ""]
@@ -24,12 +24,12 @@ with open('./Refinedcardtopicdist.csv', mode='w', encoding='UTF-8', newline='') 
 			phrasetotry = ["-".join(ngram) for ngram in ngrams]
 			for phrase in phrasetotry:
 				try:
-					cval = model.similarity('cardiology', phrase)
+					cval = model.similarity('base', phrase)
 				except:
 					cval = 0
 				if cval != 0:
 					finalwordlist.append(phrase)
-					hval = model.similarity('heart', phrase)
+					hval = model.similarity('base', phrase)
 					ewrite.writerow([phrase, cval, hval])
 print("--- %s seconds ---" % (time.time() - start_time))
 
