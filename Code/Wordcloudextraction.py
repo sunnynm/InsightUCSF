@@ -12,7 +12,7 @@ wordcloud = WordCloud(width = 800, height = 800,
                 background_color ='white',
                 collocations=False,
                 min_font_size = 10,
-                regexp = '\w+(?:-\w+)*|\$[\d.]+|\S+').generate(" ".join(list(beta.Phrase.values))) 
+                regexp = '\w+(?:-\w+)*|\$[\d.]+|\S+').generate(" ".join(list(beta.Phrase.values))) #removes dashes from compunded words
   
 # plot the WordCloud image                        
 plt.figure(figsize = (8, 8), facecolor = None) 
@@ -20,7 +20,7 @@ plt.imshow(wordcloud)
 plt.axis("off") 
 plt.tight_layout(pad = 0) 
   
-#plt.show() 
+plt.show() 
 
 plt.savefig('wordcloudFULL.png')
 plt.savefig('wordcloudFULL.pdf')
