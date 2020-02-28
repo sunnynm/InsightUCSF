@@ -10,6 +10,7 @@ Over the last couple of years, many papers have been published in the medical fi
 As we are in the middle of trying to publish our results, we cannot post the abstracts we used for our data. We, however, used 50k abstracts from various medical journals.
 
 ### Methodology 
+
 ![](./Images/Methodology.PNG)
 
 We use Rapid Annomouys Keyword Extraction to extract the general keywords. Then we use word2vec and compare all the keywords extracted to a set of reference words that are important to the subtopic we are interested in. The cosine similarity distance to the closest refernce word is used as a score to determine if the word would be important to the subtopic of interest. After analyzing these words we set a threshold to keep the keywords we are isnterestd in and then use this keywords to cluster the documents using t-SNE
