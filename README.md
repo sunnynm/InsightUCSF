@@ -13,7 +13,7 @@ As we are in the middle of trying to publish our results, we cannot post the abs
 
 ![](./Images/Methodology.PNG)
 
-We use Rapid Automatic Keyword Extraction to extract the general keywords. We then use word2vec and compare all the keywords extracted to a set of reference words that are important to the subtopic we are interested in. The cosine similarity to the closest reference word is used as a score to determine if the word would be important to the subtopic of interest. After analyzing these words we set a threshold to filter the keywords we are interested in and then use these keywords to cluster the documents using t-SNE.
+We use Rapid Automatic Keyword Extraction to extract the general keywords. We then use Word2vec and compare all the keywords extracted to a set of reference words that are important to the subtopic we are interested in. The cosine similarity to the closest reference word is used as a score to determine if the word would be important to the subtopic of interest. After analyzing these words we set a threshold to filter the keywords we are interested in and then use these keywords to cluster the documents using T-SNE.
 
 
 ### Requirements
