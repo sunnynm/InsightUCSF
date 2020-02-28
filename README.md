@@ -13,7 +13,7 @@ As we are in the middle of trying to publish our results, we cannot post the abs
 
 ![](./Images/Methodology.PNG)
 
-We use Rapid Annomouys Keyword Extraction to extract the general keywords. Then we use word2vec and compare all the keywords extracted to a set of reference words that are important to the subtopic we are interested in. The cosine similarity distance to the closest refernce word is used as a score to determine if the word would be important to the subtopic of interest. After analyzing these words we set a threshold to keep the keywords we are isnterestd in and then use this keywords to cluster the documents using t-SNE
+We use Rapid Automatic Keyword Extraction to extract the general keywords. We then use word2vec and compare all the keywords extracted to a set of reference words that are important to the subtopic we are interested in. The cosine similarity to the closest reference word is used as a score to determine if the word would be important to the subtopic of interest. After analyzing these words we set a threshold to filter the keywords we are interested in and then use these keywords to cluster the documents using t-SNE.
 
 
 ### Requirements
@@ -46,4 +46,4 @@ All packages used can be installed using conda or pip for Python 3.7:
 
 #### Word2vec Embeddings
 
-After testing various embeddings, we decided to use BioWordVec as their embeddings seem to be most appropriate for our model. Further details about how they trained the model and the actual models can be found in the following link: https://github.com/ncbi-nlp/BioSentVec
+After testing various embeddings, we decided to use BioWordVec as their embeddings seem to be most appropriate for our model. Further details about how they trained the model and the actual model can be found in the following link: https://github.com/ncbi-nlp/BioSentVec
